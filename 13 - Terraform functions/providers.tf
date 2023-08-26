@@ -12,10 +12,14 @@ terraform {
 ## Authorization to connect with Azure Portal
 
 provider "azurerm" {
-  subscription_id = "XXXXXX-XXXX-XXXXX-XXX-XXXXX"
-  tenant_id       = "XXXXXX-XXXX-XXXXX-XXX-XXXXX"
-  client_id       = "XXXXXX-XXXX-XXXXX-XXX-XXXXX"
-  client_secret   = "XXXXXX-XXXX-XXXXX-XXX-XXXXX"
+  subscription_id = ""
+  tenant_id       = ""
+  client_id       = ""
+  client_secret   = ""
 
   features {}
+}
+
+provider "random" {
+  # Configuration options
 }
